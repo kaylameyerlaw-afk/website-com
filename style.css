@@ -1,0 +1,754 @@
+
+/* =========================================
+   LEXCHAIN
+   Digital Assets & Blockchain Law
+   MAIN STYLESHEET
+========================================= */
+
+
+/* =========================================
+   1. GLOBAL SETTINGS
+========================================= */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f7f7f4;
+	color: #101826;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+	width: 90%;
+	max-width: 1180px;
+	margin: auto;
+}
+
+
+/* =========================================
+   2. HEADER / NAVIGATION
+========================================= */
+
+.header {
+	background-color: rgba(247, 247, 244, 0.96);
+	border-bottom: 1px solid #dddddd;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.navbar {
+	min-height: 82px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+.logo-box {
+	width: 38px;
+	height: 38px;
+	border: 1px solid #b99657;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #b99657;
+	font-family: Georgia, serif;
+	font-size: 14px;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+	.nav-links a {
+		font-size: 13px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		transition: 0.3s;
+	}
+
+		.nav-links a:hover {
+			color: #b99657;
+		}
+
+	.nav-links .contact-button {
+		border: 1px solid #101826;
+		padding: 10px 18px;
+	}
+
+
+/* =========================================
+   3. HERO SECTION
+========================================= */
+
+.hero {
+	min-height: 650px;
+	display: flex;
+	align-items: center;
+	padding: 90px 0;
+	background: radial-gradient( circle at 80% 25%, rgba(185, 150, 87, 0.15), transparent 30% ), #f7f7f4;
+}
+
+.hero-grid {
+	display: grid;
+	grid-template-columns: 1.15fr 0.85fr;
+	gap: 80px;
+	align-items: center;
+}
+
+.eyebrow {
+	color: #b99657;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 22px;
+}
+
+.hero h1 {
+	max-width: 700px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 75px;
+	font-weight: normal;
+	line-height: 1.05;
+	letter-spacing: -3px;
+}
+
+	.hero h1 span {
+		color: #b99657;
+	}
+
+.hero-description {
+	max-width: 610px;
+	margin-top: 28px;
+	margin-bottom: 34px;
+	color: #657080;
+	font-size: 18px;
+}
+
+.hero-buttons {
+	display: flex;
+	gap: 14px;
+	flex-wrap: wrap;
+}
+
+.button {
+	display: inline-block;
+	padding: 14px 22px;
+	font-size: 13px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.button-dark {
+	background-color: #101826;
+	color: white;
+	border: 1px solid #101826;
+}
+
+	.button-dark:hover {
+		background-color: #b99657;
+		border-color: #b99657;
+	}
+
+.button-outline {
+	border: 1px solid #101826;
+}
+
+	.button-outline:hover {
+		background-color: #101826;
+		color: white;
+	}
+
+
+/* =========================================
+   4. HERO RIGHT CARD
+========================================= */
+
+.hero-card {
+	min-height: 390px;
+	background-color: #0b1422;
+	color: white;
+	padding: 40px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 30px 70px rgba(11, 20, 34, 0.18);
+}
+
+	.hero-card::before {
+		content: "";
+		position: absolute;
+		width: 330px;
+		height: 330px;
+		border: 1px solid rgba(216, 192, 140, 0.35);
+		border-radius: 50%;
+		right: -110px;
+		top: -80px;
+	}
+
+	.hero-card::after {
+		content: "";
+		position: absolute;
+		width: 220px;
+		height: 220px;
+		border: 1px solid rgba(216, 192, 140, 0.20);
+		border-radius: 50%;
+		right: -40px;
+		top: -25px;
+	}
+
+.card-small-title {
+	color: #d8c08c;
+	font-size: 11px;
+	letter-spacing: 3px;
+	position: relative;
+	z-index: 2;
+}
+
+.hero-card h2 {
+	max-width: 340px;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	font-family: Georgia, serif;
+	font-size: 38px;
+	font-weight: normal;
+	line-height: 1.15;
+	position: relative;
+	z-index: 2;
+}
+
+.hero-card > p:not(.card-small-title) {
+	max-width: 340px;
+	color: #bac3ce;
+	font-size: 14px;
+	position: relative;
+	z-index: 2;
+}
+
+.card-location {
+	position: absolute;
+	left: 40px;
+	bottom: 30px;
+	color: #9ca8b6;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+
+/* =========================================
+   5. GENERAL SECTION SETTINGS
+========================================= */
+
+section {
+	padding: 110px 0;
+}
+
+.section-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 50px;
+	margin-bottom: 55px;
+}
+
+	.section-heading h2 {
+		max-width: 600px;
+		font-family: Georgia, serif;
+		font-size: 48px;
+		font-weight: normal;
+		line-height: 1.15;
+	}
+
+.section-description {
+	max-width: 430px;
+	color: #657080;
+	font-size: 15px;
+}
+
+
+/* =========================================
+   6. EXPERTISE / SERVICES
+========================================= */
+
+.expertise {
+	background-color: white;
+}
+
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border-top: 1px solid #dfe2e5;
+	border-left: 1px solid #dfe2e5;
+}
+
+.service-card {
+	min-height: 250px;
+	padding: 35px;
+	border-right: 1px solid #dfe2e5;
+	border-bottom: 1px solid #dfe2e5;
+	transition: 0.3s;
+}
+
+	.service-card:hover {
+		background-color: #fbfaf6;
+		transform: translateY(-4px);
+	}
+
+	.service-card > span {
+		color: #b99657;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	.service-card h3 {
+		margin-top: 32px;
+		margin-bottom: 14px;
+		font-family: Georgia, serif;
+		font-size: 26px;
+		font-weight: normal;
+	}
+
+	.service-card p {
+		color: #657080;
+		font-size: 14px;
+	}
+
+
+/* =========================================
+   7. ABOUT THE FIRM
+========================================= */
+
+.about {
+	background-color: #0b1422;
+	color: white;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 100px;
+}
+
+.about h2 {
+	font-family: Georgia, serif;
+	font-size: 54px;
+	font-weight: normal;
+	line-height: 1.1;
+}
+
+.about-content > p {
+	color: #b9c3cf;
+	font-size: 16px;
+	margin-bottom: 22px;
+}
+
+.principle {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	padding: 20px 0;
+	border-bottom: 1px solid #35404d;
+}
+
+	.principle:first-of-type {
+		border-top: 1px solid #35404d;
+		margin-top: 35px;
+	}
+
+	.principle strong {
+		font-size: 14px;
+	}
+
+	.principle span {
+		color: #8f9baa;
+		font-size: 13px;
+		text-align: right;
+	}
+
+
+/* =========================================
+   8. INSIGHTS
+========================================= */
+
+.insights {
+	background-color: #f7f7f4;
+}
+
+.insights-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.insight-card {
+	min-height: 300px;
+	background-color: white;
+	padding: 32px;
+	border: 1px solid #dfe2e5;
+	display: flex;
+	flex-direction: column;
+	transition: 0.3s;
+}
+
+	.insight-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 15px 40px rgba(16, 24, 38, 0.08);
+	}
+
+	.insight-card > span {
+		color: #b99657;
+		font-size: 10px;
+		font-weight: bold;
+		letter-spacing: 2px;
+	}
+
+	.insight-card h3 {
+		margin-top: 22px;
+		margin-bottom: 18px;
+		font-family: Georgia, serif;
+		font-size: 25px;
+		font-weight: normal;
+		line-height: 1.25;
+	}
+
+	.insight-card p {
+		color: #657080;
+		font-size: 13px;
+		margin-bottom: 25px;
+	}
+
+	.insight-card a {
+		margin-top: auto;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+		.insight-card a:hover {
+			color: #b99657;
+		}
+
+
+/* =========================================
+   9. CONTACT
+========================================= */
+
+.contact {
+	background-color: white;
+}
+
+.contact-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 80px;
+}
+
+.contact h2 {
+	font-family: Georgia, serif;
+	font-size: 58px;
+	font-weight: normal;
+	line-height: 1.1;
+}
+
+.contact-description {
+	max-width: 450px;
+	margin-top: 22px;
+	color: #657080;
+}
+
+.contact-form {
+	display: grid;
+	gap: 15px;
+}
+
+	.contact-form input,
+	.contact-form textarea {
+		width: 100%;
+		padding: 16px;
+		border: 1px solid #dfe2e5;
+		background-color: #fafafa;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		outline: none;
+	}
+
+		.contact-form input:focus,
+		.contact-form textarea:focus {
+			border-color: #b99657;
+		}
+
+	.contact-form textarea {
+		min-height: 140px;
+		resize: vertical;
+	}
+
+	.contact-form button {
+		padding: 15px 22px;
+		background-color: #101826;
+		color: white;
+		border: none;
+		cursor: pointer;
+		font-size: 13px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		transition: 0.3s;
+	}
+
+		.contact-form button:hover {
+			background-color: #b99657;
+		}
+
+.form-note {
+	color: #87909b;
+	font-size: 11px;
+}
+
+
+/* =========================================
+   10. FOOTER
+========================================= */
+
+footer {
+	background-color: #070e18;
+	color: #b9c1cc;
+	padding: 35px 0;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	font-size: 12px;
+}
+
+	.footer-content strong {
+		color: white;
+		letter-spacing: 3px;
+	}
+
+
+/* =========================================
+   11. RESPONSIVE DESIGN
+   TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+	.nav-links {
+		gap: 15px;
+	}
+
+	.hero-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.hero h1 {
+		font-size: 60px;
+	}
+
+	.services-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.about-grid {
+		grid-template-columns: 1fr;
+		gap: 50px;
+	}
+
+	.insights-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.contact-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+
+/* =========================================
+   12. RESPONSIVE DESIGN
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+	.container {
+		width: 92%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		padding: 20px 0;
+		gap: 20px;
+	}
+
+	.nav-links {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.hero {
+		padding: 70px 0;
+	}
+
+		.hero h1 {
+			font-size: 48px;
+			letter-spacing: -2px;
+		}
+
+	.hero-card {
+		padding: 30px;
+	}
+
+	section {
+		padding: 75px 0;
+	}
+
+	.section-heading {
+		display: block;
+	}
+
+	.section-description {
+		margin-top: 20px;
+	}
+
+	.section-heading h2 {
+		font-size: 39px;
+	}
+
+	.services-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.about h2 {
+		font-size: 42px;
+	}
+
+	.contact h2 {
+		font-size: 44px;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+/* =========================
+   OUR LAWYERS
+========================= */
+
+.team-section {
+	background: #f7f8fa;
+	padding: 80px 5%;
+	text-align: center;
+}
+
+	.team-section h2 {
+		font-family: Georgia, serif;
+		font-size: 52px;
+		color: #0b1b33;
+		margin-bottom: 15px;
+	}
+
+		.team-section h2::after {
+			content: "";
+			display: block;
+			width: 90px;
+			height: 3px;
+			background: #c9a24d;
+			margin: 15px auto 20px;
+		}
+
+.team-intro {
+	max-width: 800px;
+	margin: 0 auto 50px;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #4b5563;
+}
+
+.lawyers-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 35px;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.lawyer-card {
+	background: white;
+	border-radius: 8px;
+	overflow: hidden;
+	text-align: left;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+	transition: transform 0.3s ease;
+}
+
+	.lawyer-card:hover {
+		transform: translateY(-8px);
+	}
+
+	.lawyer-card img {
+		width: 100%;
+		height: 320px;
+		object-fit: cover;
+		display: block;
+	}
+
+.lawyer-info {
+	padding: 25px;
+}
+
+	.lawyer-info h3 {
+		font-family: Georgia, serif;
+		font-size: 30px;
+		color: #0b1b33;
+		margin: 0 0 5px;
+	}
+
+	.lawyer-info h4 {
+		color: #a77b25;
+		font-size: 15px;
+		margin: 0 0 15px;
+	}
+
+	.lawyer-info a {
+		display: inline-block;
+		color: #0b1b33;
+		text-decoration: none;
+		margin-bottom: 15px;
+	}
+
+	.lawyer-info p {
+		color: #4b5563;
+		font-size: 16px;
+		line-height: 1.6;
+		margin: 0;
+	}
