@@ -772,3 +772,12 @@ footer {
     color: #c89b45;
     text-decoration: underline;
 }
+
+.hero-address {
+    margin-top: 10px;
+    color: #cbd5e1;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+    max-width: 320px;
+}
