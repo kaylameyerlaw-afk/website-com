@@ -752,3 +752,23 @@ footer {
 		line-height: 1.6;
 		margin: 0;
 	}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-email {
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.footer-email a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-email a:hover {
+    color: #c89b45;
+    text-decoration: underline;
+}
